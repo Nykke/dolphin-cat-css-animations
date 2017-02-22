@@ -16,10 +16,17 @@ body {
   animation-iteration-count: infinite*/
 
   /* adds moonwalk animation*/
-  animation-name: moonwalk;
+  /*animation-name: moonwalk;
   animation-duration: 10s;
   animation-direction: reverse;
-  animation-iteration-count:infinite;
+  animation-iteration-count:infinite;*/
+
+  /*adds pacer animation*/
+  animation-name: pacer;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 
 /*walk functionality*/
@@ -33,16 +40,29 @@ body {
 }*/
 
 /*moonwalk functionality*/
-@keyframes moonwalk {
+/*@keyframes moonwalk {
   0% {
     left: 0;
   }
   100% {
     left: 95%;
   }
-}
+}*/
 
+/*pacer funcationality*/
 @keyframes pacer {
+  0% {
+    right: 0;
+    transform: scaleX(-1);
+  }
+  50% {
+    right: 40%;
+    transform: scaleX(-1);
+  }
+  100% {
+    right: 80%;
+    transform: scaleX(1);
+  }
 }
 
 @keyframes beffies {
