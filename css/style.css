@@ -22,10 +22,16 @@ body {
   animation-iteration-count:infinite;*/
 
   /*adds pacer animation*/
-  animation-name: pacer;
+  /*animation-name: pacer;
   animation-timing-function: linear;
   animation-direction: alternate;
   animation-duration: 5s;
+  animation-iteration-count: infinite;*/
+
+  /* adds beffies animation*/
+  animation-name: beffies;
+  animation-duration: 6s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 
@@ -50,7 +56,7 @@ body {
 }*/
 
 /*pacer funcationality*/
-@keyframes pacer {
+/*@keyframes pacer {
   0% {
     right: 0;
     transform: scaleX(-1);
@@ -63,9 +69,24 @@ body {
     right: 80%;
     transform: scaleX(1);
   }
-}
+}*/
 
+/*adds beffies functionality*/
 @keyframes beffies {
+  0% {
+    left: 0;
+    top: 8%;
+  }
+  50% {
+    right: 0;
+    top: 8%;
+    transform: rotate(-150deg)
+  }
+  100% {
+    right: 100%;
+    top: 8%; 
+    transform: rotate(300deg);
+  }
 }
 
 @keyframes larrybird {
