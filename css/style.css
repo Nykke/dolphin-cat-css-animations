@@ -9,25 +9,37 @@ body {
   position: absolute;
   bottom: -20px;
   /* adds walk animation*/
-  animation-name: walk;
+  /*animation-name: walk;
   animation-duration: 25s;
   animation-direction: normal;
   animation-timing-function: linear;
-  animation-iteration-count: infinite
+  animation-iteration-count: infinite*/
+
+  /* adds moonwalk animation*/
+  animation-name: moonwalk;
+  animation-duration: 10s;
+  animation-direction: reverse;
+  animation-iteration-count:infinite;
 }
 
 /*walk functionality*/
-@keyframes walk {
+/*@keyframes walk {
   0% {
     left: 0px;
   }
   100% {
   left: 80%;
   }
-}
+}*/
 
-
+/*moonwalk functionality*/
 @keyframes moonwalk {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 95%;
+  }
 }
 
 @keyframes pacer {
