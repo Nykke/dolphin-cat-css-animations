@@ -29,8 +29,14 @@ body {
   animation-iteration-count: infinite;*/
 
   /* adds beffies animation*/
-  animation-name: beffies;
+  /*animation-name: beffies;
   animation-duration: 6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;*/
+
+  /*adds larrybird animation*/
+  animation-name: larrybird;
+  animation-duration: 3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
@@ -72,7 +78,7 @@ body {
 }*/
 
 /*adds beffies functionality*/
-@keyframes beffies {
+/*@keyframes beffies {
   0% {
     left: 0;
     top: 8%;
@@ -84,10 +90,20 @@ body {
   }
   100% {
     right: 100%;
-    top: 8%; 
+    top: 8%;
     transform: rotate(300deg);
   }
-}
+}*/
 
 @keyframes larrybird {
+  0% {
+    left: 0;
+    top: 50%;
+    transform: rotate(-100deg);
+  }
+  100% {
+    left: 80%;
+    top: 50%;
+    transform: rotate(320deg);
+  }
 }
